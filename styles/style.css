@@ -1,0 +1,40 @@
+.quick-roll {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+  color: inherit;
+  margin-top: 6px;
+  outline: none; 
+}
+
+.quick-roll .d20-svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+.quick-roll:hover {
+  border: none;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.quick-roll:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.quick-roll:hover .d20-svg {
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
